@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+    </head>
+    <body>
+        <form class="validate">
+            <div class="field">
+                <label for="full-name" class="label">Full Name</label>
+                <div class="control">
+                    <input name="full-name" class="input" placeholder="Full Name" data-validation="not-blank" type="text">
+                </div>
+                <div class="validation-error-message hidden has-text-danger">Name is required</div>
+            </div>
+            <div class="field">
+                <label for="email" class="label">Email</label>
+                <div class="control">
+                    <input name="email" class="input" placeholder="Email" data-validation="email not-blank" type="email">
+                </div>
+                <div class="validation-error-message hidden has-text-danger">Email must be a valid email address</div>
+            </div>
+            <div class="field">
+                <label for="phone" class="label">Phone</label>
+                <div class="control">
+                    <input name="phone" class="input" placeholder="Phone Number" data-validation="phone not-blank" type="tel">
+                </div>
+                <div class="validation-error-message hidden has-text-danger">Phone number must be a valid 10-digit U.S. phone number</div>
+            </div>
+            <div class="field">
+                <label for="drop-off" class="label">Would you like to drop off plastic for recycling?</label>
+                <div class="control">
+                    <select name="drop-off" class="select" data-validation="not-blank">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="Yes">No</option>
+                    </select>
+                </div>
+                <div class="validation-error-message hidden has-text-danger">Either yes or no must be selected</div>
+            </div>
+            <div class="field">
+                <label for="remarks" class="label">How Can We Help?</label>
+                <div class="control">
+                    <textarea name="remarks" class="textarea" placeholder="How can we help?" data-validation="not-blank"></textarea>
+                </div>
+                <div class="validation-error-message hidden has-text-danger">How can we help is required</div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button" type="submit">Submit</button>
+                </div>
+                <div class="validation-error-message hidden has-text-danger">All errors must be corrected before submission</div>
+            </div>
+            
+        </form>
+        <script src="form-validation.js" />
+    </body>
+</html>
+
