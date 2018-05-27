@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/scripts/index.ts',
     output: {
       path: __dirname,
-      filename: 'build/form-validation.js',
+      filename: 'build/bulma-form-validation.js',
       library: 'formValidation',
       libraryTarget: 'var'
     },
