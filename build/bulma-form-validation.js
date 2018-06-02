@@ -92,10 +92,10 @@ var FieldValidator = /** @class */ (function () {
         return !FieldValidator.notBlank(value) || /^.+@.+\..+$/.test(value);
     };
     FieldValidator.phone = function (value) {
-        return !FieldValidator.notBlank(value) || /^(\d{3})?[- ]?\d{3}[- ]?\d{4}$/.test(value) && parseFloat(value) != NaN;
+        return !FieldValidator.notBlank(value) || /^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$/.test(value);
     };
     FieldValidator.number = function (value) {
-        return !FieldValidator.notBlank(value) || /^[+-][0-9.,]+$/.test(value) && parseFloat(value) != NaN;
+        return !FieldValidator.notBlank(value) || /^[+-][0-9.,]+$/.test(value) && parseFloat(value.replace(/[^0-9.,]/g, "")) != NaN;
     };
     return FieldValidator;
 }());
