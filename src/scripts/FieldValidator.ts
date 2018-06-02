@@ -10,7 +10,7 @@ export default class FieldValidator
     };
 
     public static phone = (value: string) => {
-        return !FieldValidator.notBlank(value) || /^(\d{3})?[- ]?\d{3}[- ]?\d{4}$/.test(value) && parseFloat(value) != NaN;
+        return !FieldValidator.notBlank(value) || /^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$/.test(value) && parseFloat(value) != NaN;
     }
 
     public static number = (value: string) => {
