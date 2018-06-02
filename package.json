@@ -1,14 +1,14 @@
 {
   "name": "bulma-form-validation",
-  "version": "1.0.0",
-  "description": "Validates form fields",
-  "main": "dist/index.js",
+  "version": "0.1.0",
+  "description": "Validates form fields built with Bulma",
+  "main": "dist/bulma-form-validation.js",
   "scripts": {
     "pack": "webpack --watch",
     "serve": "live-server --open=build --watch=build",
     "start": "gulp"
   },
-  "author": "",
+  "author": "Matthew Prichard",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",

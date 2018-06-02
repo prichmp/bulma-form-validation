@@ -310,4 +310,4 @@ window.addEventListener("load", function (event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=form-validation.js.map
+//# sourceMappingURL=bulma-form-validation.js.map
